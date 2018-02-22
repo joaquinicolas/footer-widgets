@@ -10,7 +10,7 @@ interface IContactComponentProps {
   mail: string;
 };
 
-const ContactComponent: React.SFC<IContactComponentProps> = (props: IContactComponentProps) => {
+export const ContactComponent: React.SFC<IContactComponentProps> = (props: IContactComponentProps) => {
   return (
     <div className='footer-widget contact-widget'>
       <WidgetTitle type='text' text={props.title} />
@@ -22,4 +22,3 @@ const ContactComponent: React.SFC<IContactComponentProps> = (props: IContactComp
   );
 }
 
-export default ContactComponent;
