@@ -15,11 +15,6 @@ export interface IWidgetTitleProps {
 interface IWidgetTitleState { };
 
 export default class WidgetTitle extends React.Component<IWidgetTitleProps, IWidgetTitleState> {
-  static propTypes = {
-    image: React.PropTypes.string,
-    type: React.PropTypes.string,
-    text: React.PropTypes.string
-  };
 
   static defaultProps = {
     type: TEXT,

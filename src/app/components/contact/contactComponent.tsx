@@ -2,7 +2,7 @@ import * as React from 'react';
 import WidgetTitle from '../WidgetTitle/WidgetTitle';
 import { AddressComponent } from '../Address/addressComponent';
 
-interface IContactComponentProps {
+export interface IContactComponentProps {
   content?: string;
   title: string;
   streetAddress: string;

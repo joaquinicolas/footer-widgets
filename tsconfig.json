@@ -1,24 +1,13 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "typeRoots": ["node_modules/@types/"],
-    "types": [
-      "react",
-      "react-dom",
-      "react-addons-test-utils",
-      "jasmine",
-      "es6-shim"
-    ]
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
   },
-  "compileOnSave": false,
-  "filesGlob": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "!node_modules/**"
+  "include": [
+      "./src/**/*"
   ]
 }

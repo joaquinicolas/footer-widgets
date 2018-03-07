@@ -7,7 +7,7 @@ export interface Tweet {
   time: Date;
   url: string;
 }
-interface ITwitterComponentProps {
+export interface ITwitterComponentProps {
   tweets: Tweet[]
 };
 
@@ -16,7 +16,7 @@ function renderTweets(tweets: Tweet[]) {
     <SingleTweetComponent content={t.content} href={t.url} tweetTime={t.time} />
   })
 }
-const TwitterComponent: React.SFC<ITwitterComponentProps> = props => {
+export const TwitterComponent: React.SFC<ITwitterComponentProps> = props => {
   return (
     <div className='footer-widget twitter-widget'>
       <WidgetTitle type={TEXT} text='Latest Tweets' />
