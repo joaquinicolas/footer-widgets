@@ -1,6 +1,6 @@
 import * as React from 'react';
 import WidgetTitle, { TEXT } from '../WidgetTitle/WidgetTitle';
-import SingleTweetComponent from '../single-tweet/singleTweetComponent';
+import SingleTweetComponent from '../single-tweet/SingleTweetComponent';
 
 export interface Tweet {
   content: string;

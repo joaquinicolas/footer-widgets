@@ -21,19 +21,16 @@ module.exports = {
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
             
             //load css
-             {
-                 test:/\.scss?$/,
-                 use: [
-                    'style-loader',
+            {
+                test: /\.scss?$/,
+                use: [{
+                        loader: "style-loader"
+                    },
                     {
-                      loader: 'typings-for-css-modules-loader',
-                      options: {
-                        modules: true,
-                        namedExport: true
-                      }
+                        loader: "css-loader"
                     }
-                  ]
-             }
+                ]
+            }
         ]
     }
 };

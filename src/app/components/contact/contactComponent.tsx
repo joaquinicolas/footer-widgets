@@ -1,6 +1,6 @@
 import * as React from 'react';
 import WidgetTitle from '../WidgetTitle/WidgetTitle';
-import { AddressComponent } from '../Address/addressComponent';
+import { AddressComponent } from '../Address/AddressComponent';
 
 export interface IContactComponentProps {
   content?: string;
