@@ -1,20 +1,17 @@
 import * as React from 'react';
-import { ContactComponent, IContactComponentProps } from '../contact/contactComponent';
+/*import { ContactComponent, IContactComponentProps } from '../contact/contactComponent';
 import { ITwitterComponentProps, TwitterComponent } from '../twitter/twitterComponent';
 
 export interface IFooterComponentProps {
     contactInfo: IContactComponentProps;
     tweetData: ITwitterComponentProps;
-}
+}*/
 
-const FooterComponent: React.SFC<IFooterComponentProps> = (props) => {
+const FooterComponent: React.SFC<any> = (props) => {
     return (
         <footer>
-            <div className="container">
-                <div className="footer-widget-row">
-                    <ContactComponent {...props.contactInfo} />
-                    <TwitterComponent {...props.tweetData} />
-                </div> 
+            <div className="container-fluid text-center ft-copyright">
+                <p>© 2017 <a href="">Kotha PRO </a> - Designed with <i className="fa fa-heart"></i> by <a href="http://shapedtheme.com">ShapedTheme</a></p>
             </div>
         </footer>
     );

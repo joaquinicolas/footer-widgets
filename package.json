@@ -66,6 +66,10 @@
     "build": "webpack --mode production",
     "start": "webpack --config webpack.dev.js --mode development"
   },
+  "name": "footer-widgets",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "eslintConfig": {
     "root": true,
     "env": {
