@@ -68,7 +68,7 @@
   },
   "name": "footer-widgets",
   "version": "1.0.0",
-  "main": "./dist/index.js",
+  "main": "./dist/bundle.js",
   "types": "./dist/index.d.ts",
   "eslintConfig": {
     "root": true,
